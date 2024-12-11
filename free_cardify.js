@@ -897,6 +897,9 @@
     if (!Lampa.Platform.screen('tv')) {
       return console.log("Cardify", "no tv");
     }
+    if (!Lampa.Account.hasPremium()) {
+      return console.log("Cardify", "no premium");
+    }
     var _0x1a17dd = {
       ru: "Включить звук",
       en: "Enable sound",
